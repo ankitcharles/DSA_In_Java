@@ -11,8 +11,13 @@ public class HashMapDemo {
         stockPrice.put("BMW",73);
         stockPrice.put("Microsoft",215);
 
+        Set<Map.Entry<String,Integer>> entrySet = stockPrice.entrySet();
+
+        for (Map.Entry<String,Integer> entry : entrySet){
+            System.out.println("Company Name:" + entry.getKey() +"Stock Price" +entry.getKey());
+        }
         // This will insert netflix in the stock price map
-        stockPrice.compute("Netflix",(k,v) -> v==null ? 175 :v+1);
+      /*  stockPrice.compute("Netflix",(k,v) -> v==null ? 175 :v+1);
 
         System.out.println("HashMap keys");
         Set<String> keys= stockPrice.keySet();
@@ -21,7 +26,6 @@ public class HashMapDemo {
 
         Collection<Integer> values = stockPrice.values();
         for (int value :values){
-            System.out.println(value);
+            System.out.println(value); */
         }
     }
-}
