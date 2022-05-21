@@ -1,4 +1,4 @@
-package Array;
+package leetcode.Array;
 
 public class EvenNumber {
     public static void main(String[] args) {

@@ -28,7 +28,7 @@ public class RemoveDuplicateFromSortedArray {
     public static void main(String[] args) {
         int [] nums = new int[] {1,1,1,2,2,3};
         System.out.println(removeDuplicates(nums));
-        System.out.println("Array with only 2 duplicate values:" + Arrays.toString(nums));
+        System.out.println("leetcode.Array with only 2 duplicate values:" + Arrays.toString(nums));
 
     }
 }

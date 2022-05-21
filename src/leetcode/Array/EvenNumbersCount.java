@@ -1,10 +1,8 @@
-package Array;
+package leetcode.Array;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
-import static java.util.Arrays.*;
 import static java.util.stream.Collectors.*;
 
 public class EvenNumbersCount {
