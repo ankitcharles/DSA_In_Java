@@ -1,4 +1,4 @@
-package leetcode.Array;
+package leetcode;
 
 public class MaxConsecutiveOnes {
     public static int findMaxConsOnes(int[] arr){

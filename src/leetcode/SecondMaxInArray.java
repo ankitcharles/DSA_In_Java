@@ -1,4 +1,4 @@
-package leetcode.Array;
+package leetcode;
 
 public class SecondMaxInArray {
     /*public static int findSecondMax(int[] arr) {
