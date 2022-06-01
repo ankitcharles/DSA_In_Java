@@ -17,7 +17,6 @@ public class SecondMaxInArray {
 
         return secondMax;
     } */
-
     public static int findSecondMax2(int[] nums) {
         int max = Integer.MIN_VALUE;
         int secMax = Integer.MIN_VALUE;
@@ -32,11 +31,9 @@ public class SecondMaxInArray {
         }
             return secMax;
         }
-
         public static void main (String[]args){
             int[] arr = new int[]{-2, -33, -10, -345};
             System.out.println(findSecondMax2(arr));
         }
-
     }
 

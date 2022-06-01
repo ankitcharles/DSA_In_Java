@@ -12,7 +12,6 @@ public class BinarySearch {
     static int binarySearch(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
-
         while (start <= end) {
             //find middle element
             // this is being done to make sure that sum of start and end doesn't exceed INTEGER range.
@@ -26,7 +25,6 @@ public class BinarySearch {
             } else {
                 return mid;
             }
-
         }
         return -1;
     }
