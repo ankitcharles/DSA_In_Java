@@ -1,7 +1,5 @@
 package leetcode.slidingwindow;
-
 import java.util.Arrays;
-
 public class MaxSubArrayOfSizeK {
     public static int findMaximum(int[] nums, int k) {
         int windowSum = 0;
