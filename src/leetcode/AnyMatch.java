@@ -1,6 +1,8 @@
 package leetcode;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -12,10 +14,8 @@ public class AnyMatch {
         arrayList.add("Charles");
         arrayList.add("Darwin");
         arrayList.add("Waters");
-        List<String> list= arrayList.stream()
-                .filter(value->value.matches("^[ABC]$"))
-                .collect(Collectors.toList());
 
-        System.out.println(list);
+        System.out.println(Arrays.toString(arrayList.stream()
+                .filter(value -> value.matches("^[ABC]$")).toArray()));
     }
 }
