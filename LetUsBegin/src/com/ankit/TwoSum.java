@@ -1,26 +1,22 @@
-package com.ankit;
-
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TwoSum {
-    public static int[] findSum(int[] arr, int n){
-        int [] result = new int[2];
-        for(int i=0;i< arr.length;i++){
-            for (int j=i+1;j<arr.length;j++){
-                if (arr[i]+arr[j]==n){
-                    result[0]=arr[i];
-                    result[1]=arr[j];
-                }
+    public static int[] twoSumNumbers(int[] nums,int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int compliment = target - nums[i];
+            if (map.containsKey(compliment)) {
+                return new int[]{map.get(compliment), i};
             }
-            return result;
+            map.put(nums[i], i);
         }
-        return arr;
+        return null;
     }
-
     public static void main(String[] args) {
-        int n =9;
-        int[] arr = {2,4,5,7,8};
-        int[] result = findSum(arr,n);
-        System.out.println(Arrays.toString(result));
+        int[] nums = new int[] {2,7,11,15};
+        int target=9;
+        System.out.println("values of two sum:" +Arrays.toString(twoSumNumbers(nums, target)));
     }
 }
